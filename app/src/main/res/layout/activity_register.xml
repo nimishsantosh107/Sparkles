@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/activity_register"
+    tools:context="com.example.nimish.sparkles.RegisterActivity"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="@font/galada"
+        android:text="Sparkles"
+        android:textAlignment="center"
+        android:textColor="#e1e1e1"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:fontFamily="@font/galada"
+        android:paddingTop="20dp"
+        android:text="Sign Up"
+        android:textColor="#e1e1e1"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign"
+        android:hint="Enter email"
+        android:paddingTop="10dp"
+        android:textColor="#e1e1e1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColorHint="#e1e1e1"/>
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editEmail"
+        android:hint="Enter a username"
+        android:paddingTop="10dp"
+        android:textColor="#e1e1e1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColorHint="#e1e1e1"/>
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editUsername"
+        android:layout_marginTop="10dp"
+        android:hint="Enter a password"
+        android:textColor="#e1e1e1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColorHint="#e1e1e1"/>
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="@font/abel"
+        android:onClick="signupButtonClicked"
+        android:text="sign up" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signupButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="@font/abel"
+        android:onClick="loginButtonClicked"
+        android:text="login" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "264213162953",
+    "firebase_url": "https://sparkles-8c5d8.firebaseio.com",
+    "project_id": "sparkles-8c5d8",
+    "storage_bucket": "sparkles-8c5d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264213162953:android:16c457c267775f3e",
+        "android_client_info": {
+          "package_name": "com.example.nimish.sparkles"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264213162953-o72p4b04s5t6md02er7opf9rmbps6lb3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nimish.sparkles",
+            "certificate_hash": "5e8fb4be25623e405ffb61816646ff4e7993b9f0"
+          }
+        },
+        {
+          "client_id": "264213162953-eb7fsqkj97m4fgajuaua7rqob86lbjl2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6feDsp0jS5BE8ACu8mPCzXUmo6-SDKrk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264213162953-eb7fsqkj97m4fgajuaua7rqob86lbjl2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

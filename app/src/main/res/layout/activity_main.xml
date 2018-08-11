@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nimish.sparkles.MainActivity"
+    tools:ignore="Orientation">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:fontFamily="@font/galada"
+        android:background="@color/colorPrimaryDark"
+        android:text="Sparkles"
+        android:textAlignment="center"
+        android:textColor="#e1e1e1"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        ></WebView>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout"
+        android:layout_below="@+id/webView"
+        android:id="@+id/messageRec"
+        app:stackFromEnd="true"
+        app:reverseLayout="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:background="@color/colorPrimary"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout"
+        android:background="@color/colorPrimary">
+
+        <EditText
+            android:id="@+id/editMessageE"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:hint="Type..."
+            android:inputType="textShortMessage"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textColorHint="#e1e1e1"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="@font/abel"
+            android:onClick="sendButtonClicked"
+            android:text="send" />
+
+    </LinearLayout>
+
+</RelativeLayout>
